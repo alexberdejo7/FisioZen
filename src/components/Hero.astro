@@ -1,36 +1,36 @@
-<!-- Hero.astro -->
-<section class="relative bg-cover bg-center text-white py-32 px-4" style="background-image: linear-gradient(to bottom right, rgba(0, 123, 150, 0.5), rgba(0, 123, 150, 0.3)), url('/images/hero-pexels.jpg');">
-  <div class="absolute inset-0 bg-black/30" aria-hidden="true"></div>
-  <div class="relative z-10 max-w-xl mx-auto text-center flex flex-col items-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Recupera tu bienestar con FisioZen</h1>
-    <p class="text-lg md:text-xl mb-6">Fisioterapia, rehabilitación y salud integral en un solo lugar</p>
-    <a href="#contacto" class="bg-white text-teal-700 hover:bg-teal-100 font-semibold py-3 px-6 rounded shadow">
-      Agenda tu cita
-    </a>
+---
+// components/HeroSection.astro
+---
+<section class="px-6 lg:px-12 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+  <div>
+    <p class="text-sm tracking-wide uppercase font-semibold text-gray-700 mb-2">Alivia el dolor y recupera la movilidad</p>
+    <h1 class="text-4xl md:text-5xl font-bold text-[#6e660e] leading-tight mb-6">
+      Rehabilitación<br />física de confianza
+    </h1>
+    <p class="text-gray-700 mb-6">
+      En FisioZen, brindamos tratamientos personalizados para una amplia gama de condiciones, promoviendo tu bienestar y recuperación con profesionales expertos.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#" class="bg-[#6e660e] hover:bg-[#5a540c] text-white px-5 py-3 rounded-md font-medium">Agendar cita</a>
+      <a href="#" class="border border-gray-400 px-5 py-3 rounded-md font-medium text-gray-700">Más información</a>
+    </div>
+    <div class="flex gap-8 mt-10">
+      <div class="text-center">
+        <p class="text-[#6e660e] font-bold text-xl">6,500+</p>
+        <p class="text-sm text-gray-600">Pacientes atendidos</p>
+      </div>
+      <div class="text-center">
+        <p class="text-[#6e660e] font-bold text-xl">10+</p>
+        <p class="text-sm text-gray-600">Años de experiencia</p>
+      </div>
+      <div class="text-center">
+        <p class="text-[#6e660e] font-bold text-xl">150+</p>
+        <p class="text-sm text-gray-600">Reseñas de 5 estrellas</p>
+      </div>
+    </div>
   </div>
-</section>
-
-<!-- Servicios.astro (resumen de ejemplo) -->
-<section id="servicios" class="py-16 bg-white px-4">
-  <div class="max-w-7xl mx-auto text-center mb-8">
-    <h2 class="text-3xl font-bold text-gray-800">Nuestros Servicios</h2>
-    <p class="text-gray-600 mt-2">Cubrimos todas tus necesidades de recuperación física</p>
-  </div>
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div class="text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition-shadow">
-      <img src="/images/servicio-rehabilitacion.jpg" alt="Rehabilitación física" class="w-full h-40 object-cover rounded mb-4" />
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Rehabilitación Física</h3>
-      <p class="text-gray-600 text-sm">Ejercicios personalizados para recuperar movilidad y funcionalidad.</p>
-    </div>
-    <div class="text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition-shadow">
-      <img src="/images/servicio-deportiva.jpg" alt="Lesiones deportivas" class="w-full h-40 object-cover rounded mb-4" />
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Lesiones Deportivas</h3>
-      <p class="text-gray-600 text-sm">Terapias para acelerar tu recuperación y volver al deporte.</p>
-    </div>
-    <div class="text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition-shadow">
-      <img src="/images/servicio-masajes.jpg" alt="Masajes terapéuticos" class="w-full h-40 object-cover rounded mb-4" />
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Masajes Terapéuticos</h3>
-      <p class="text-gray-600 text-sm">Alivio del estrés y tensión muscular con métodos especializados.</p>
-    </div>
+  <div class="relative">
+    <img src="../../images/fisiohero.png" alt="Fisioterapia" class="w-full rounded-xl" />
+    
   </div>
 </section>

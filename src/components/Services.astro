@@ -1,25 +1,84 @@
-<!-- Servicios.astro (resumen de ejemplo) -->
-<section id="servicios" class="py-16 bg-white px-4">
-    <div class="max-w-7xl mx-auto text-center mb-8">
-      <h2 class="text-3xl font-bold text-gray-800">Nuestros Servicios</h2>
-      <p class="text-gray-600 mt-2">Cubrimos todas tus necesidades de recuperación física</p>
+<section class="py-16 bg-white text-gray-800">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Servicios</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- 1: Rehabilitación física -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="4" />
+          <path d="M5.5 21v-2a4.5 4.5 0 0 1 9 0v2" />
+        </svg>
+        <h3 class="text-lg font-semibold">Rehabilitación física</h3>
+        <p class="text-sm text-gray-600 mt-2">Tratamientos personalizados para recuperar movilidad y fuerza.</p>
+      </div>
+
+      <!-- 2: Terapia deportiva -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M9 12l2 2l4 -4"/>
+        </svg>
+        <h3 class="text-lg font-semibold">Terapia deportiva</h3>
+        <p class="text-sm text-gray-600 mt-2">Prevención y recuperación de lesiones en deportistas.</p>
+      </div>
+
+      <!-- 3: Terapia de espalda -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 3v18M4 12h16" />
+        </svg>
+        <h3 class="text-lg font-semibold">Terapia de espalda</h3>
+        <p class="text-sm text-gray-600 mt-2">Alivio de dolor lumbar y cervical con ejercicios guiados.</p>
+      </div>
+
+      <!-- 4: Electroterapia -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <polyline points="4 14 10 14 10 10 16 10" />
+          <polyline points="16 10 16 6 20 6" />
+        </svg>
+        <h3 class="text-lg font-semibold">Electroterapia</h3>
+        <p class="text-sm text-gray-600 mt-2">Impulsos eléctricos para aliviar dolor y estimular músculos.</p>
+      </div>
+
+      <!-- 5: Masajes terapéuticos -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M20 12H4M12 4v16" />
+        </svg>
+        <h3 class="text-lg font-semibold">Masajes terapéuticos</h3>
+        <p class="text-sm text-gray-600 mt-2">Técnicas manuales para liberar tensión muscular.</p>
+      </div>
+
+      <!-- 6: Terapia de rodilla -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 8v4l3 3" />
+        </svg>
+        <h3 class="text-lg font-semibold">Terapia de rodilla</h3>
+        <p class="text-sm text-gray-600 mt-2">Fortalecimiento y estabilización tras lesiones articulares.</p>
+      </div>
+
+      <!-- 7: Vendaje neuromuscular -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 4l16 16M4 20L20 4" />
+        </svg>
+        <h3 class="text-lg font-semibold">Vendaje neuromuscular</h3>
+        <p class="text-sm text-gray-600 mt-2">Ayuda a aliviar el dolor y mejorar el rendimiento muscular.</p>
+      </div>
+
+      <!-- 8: Valoración postural -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+        <svg class="w-10 h-10 mx-auto text-teal-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 2v20M4 12h16" />
+        </svg>
+        <h3 class="text-lg font-semibold">Valoración postural</h3>
+        <p class="text-sm text-gray-600 mt-2">Detectamos desequilibrios para prevenir futuras lesiones.</p>
+      </div>
+
     </div>
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition-shadow">
-        <img src="/images/servicio-rehabilitacion.jpg" alt="Rehabilitación física" class="w-full h-40 object-cover rounded mb-4" />
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Rehabilitación Física</h3>
-        <p class="text-gray-600 text-sm">Ejercicios personalizados para recuperar movilidad y funcionalidad.</p>
-      </div>
-      <div class="text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition-shadow">
-        <img src="/images/servicio-deportiva.jpg" alt="Lesiones deportivas" class="w-full h-40 object-cover rounded mb-4" />
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Lesiones Deportivas</h3>
-        <p class="text-gray-600 text-sm">Terapias para acelerar tu recuperación y volver al deporte.</p>
-      </div>
-      <div class="text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition-shadow">
-        <img src="/images/servicio-masajes.jpg" alt="Masajes terapéuticos" class="w-full h-40 object-cover rounded mb-4" />
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Masajes Terapéuticos</h3>
-        <p class="text-gray-600 text-sm">Alivio del estrés y tensión muscular con métodos especializados.</p>
-      </div>
-    </div>
-  </section>
-  
+  </div>
+</section>
